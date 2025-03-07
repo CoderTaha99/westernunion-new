@@ -1,0 +1,218 @@
+.TransferShortDetails_rec-name__qWj_7 {
+    color: var(--color-textPrimary);
+    font-family: EuclidWU;
+    max-width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: capitalize
+}
+
+.TransferShortDetails_transaction-date-status__Uq7IK {
+    color: var(--color-lightTextPrimary);
+    font-family: EuclidWU;
+    width: 260px
+}
+
+.TransferShortDetails_transaction-status__zUd_N {
+    display: inline-block;
+    margin-left: 5px;
+    -webkit-padding-start: 15px;
+    padding-inline-start: 15px
+}
+
+.TransferShortDetails_transaction-status__zUd_N .TransferShortDetails_transaction-status-dot__qIxbX {
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: var(--color-grey);
+    position: absolute;
+    left: 3px;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    top: 6px;
+    transform-style: preserve-3d
+}
+
+@media(max-width: 1599.98px) {
+    .TransferShortDetails_transaction-status__zUd_N .TransferShortDetails_transaction-status-dot__qIxbX {
+        top: 4px
+    }
+}
+
+.TransferShortDetails_amount-details__kl1Ag {
+    color: var(--color-textPrimary);
+    font-family: EuclidWU;
+    -webkit-margin-start: auto;
+    margin-inline-start: auto;
+    max-width: 200px;
+    text-align: end
+}
+
+.TransferShortDetails_amount-details-mtcn__Kcg8m {
+    -webkit-margin-start: 5px;
+    margin-inline-start: 5px
+}
+
+.TransferShortDetails_mtcn-details__rQddZ {
+    color: var(--color-textPrimary);
+    font-family: EuclidWU;
+    margin-left: auto;
+    max-width: 200px;
+    text-align: right;
+    height: 24px
+}
+
+@media(max-width: 499.98px) {
+    .TransferShortDetails_track-link-zepto__H9K36 {
+        font-size: 15px
+    }
+}
+
+@media(max-width: 1024.98px) {
+    .TransferShortDetails_rec-name__qWj_7 {
+        max-width: 165px
+    }
+
+    .TransferShortDetails_transaction-date-status__Uq7IK {
+        width: auto
+    }
+}
+
+.GoogleAds_googleAdsContainer__8BHLI {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 100px auto 30px;
+
+    @media print {
+        display: none
+    }
+}
+
+@media(max-width: 1024.98px) {
+    .TAT_header__A5P5U {
+        flex-flow: column
+    }
+}
+
+.TAT_tat-progress-container__aQh_i {
+    -webkit-padding-start: 12px;
+    padding-inline-start: 12px
+}
+
+@media(max-width: 1599.98px) {
+    .TAT_tat-progress-container__aQh_i {
+        -webkit-padding-start: 8px;
+        padding-inline-start: 8px
+    }
+}
+
+@media(max-width: 1024.98px) {
+    .TAT_tat-progress-container__aQh_i {
+        padding-left: 6px
+    }
+}
+
+@media(max-width: 499.98px) {
+    .TAT_tat-progress-container__aQh_i {
+        padding-left: 4px
+    }
+}
+
+.TAT_gap__fM1zs {
+    gap: 16px
+}
+
+.TAT_gap-radio-group__VTU_r {
+    z-index: 333;
+    place-content: center space-between
+}
+
+.TAT_mtcnSubtitle__SZf81,
+.TAT_mtcnText__KYBqu,
+.TAT_mtcnTitle__UXaEH {
+    color: var(--color-textPrimary)
+}
+
+.TAT_pageTitle__qQsFo {
+    margin: 0
+}
+
+.TAT_number-input__AYNc4 input {
+    padding-bottom: 9px !important
+}
+
+@media(max-width: 1024.98px) {
+    .TAT_number-input__AYNc4 input {
+        padding-bottom: 10px !important
+    }
+
+    .TAT_mtcn-container__F3VoB {
+        margin-inline: 0
+    }
+}
+
+.TAT_history-link-container__v_8E_,
+.TAT_sender-link-container__lTchB {
+    justify-content: flex-start
+}
+
+.TAT_history-link-container__v_8E_ {
+    gap: 16px
+}
+
+.TAT_history-link-container__v_8E_>div {
+    margin-left: auto;
+    padding-right: 15px
+}
+
+.TAT_history-link-container__v_8E_>p {
+    margin-bottom: 0
+}
+
+@media(max-width: 1024.98px) {
+    .TAT_history-link-container__v_8E_ {
+        display: inline
+    }
+
+    .TAT_history-link-container__v_8E_>div {
+        display: inline;
+        margin-left: 4px;
+        padding-right: 0
+    }
+
+    .TAT_history-link-container__v_8E_>p {
+        display: inline;
+        margin-bottom: 0
+    }
+}
+
+.TAT_link-button__cTH7B label {
+    margin: 0;
+    cursor: pointer
+}
+
+.TAT_captcha__QB53_ {
+    padding-bottom: 20px
+}
+
+.TAT_rencet-activity-title__zx9px {
+    color: var(--color-textPrimary)
+}
+
+@media(max-width: 1024.98px) {
+    .TAT_resetWidth___exOT .TAT_gap__fM1zs>div {
+        width: 47%
+    }
+}
+
+.TAT_number-input__AYNc4 {
+    margin-top: 3px
+}
+
+.TAT_error-position__DQtem {
+    position: absolute
+}
